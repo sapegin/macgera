@@ -22,3 +22,9 @@ tags: [Событие, Яндекс]
 *Теплый, ламповый Front-end разработчик. (с) Алексей Кухарь*
 
 А Яндекс довольно сильная в технологическом плане компания.
+
+_**UPD** - Небольшое видео о мероприятии. Где-то там есть я._
+
+<div class="if">
+    <iframe width="853" height="480" src="http://www.youtube.com/embed/aV5OF71Sm8I" frameborder="0" allowfullscreen></iframe>
+</div>
