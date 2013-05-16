@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<title>{% block title %}{% endblock title %}Блог Михаила Якименко</title>
+<meta charset="UTF-8" />
+<meta name="author" content="Михаил Якименко" />
+<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+
+<meta name="keywords" content="html, css, python, django" />
+<meta name="description" content="Блог веб разработчика Михаила Якименко. Разработка html, css, python, django." />
+
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="/static/js/func.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Render -->
+
+<link rel=stylesheet type=text/css href="/static/css/style.css">
+
+</head>
+<body>
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+{% endblock content %}
+
+<!-- footer -->
+<footer>
+    <span class="copyrights">2010–2013 Михаил Якименко (<a href="/pages/about">Обо мне</a>)</span>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

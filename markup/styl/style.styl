@@ -1,0 +1,180 @@
+transition(p, d, t)
+    -webkit-transition-property: p;
+    -webkit-transition-duration: d;
+    -webkit-transition-timing-function: t;
+    -moz-transition-property: p;
+    -moz-transition-duration: d;
+    -moz-transition-timing-function: t;
+    -o-transition-property: p;
+    -o-transition-duration: d;
+    -o-transition-timing-function: t;
+
+text_color = #303030
+border_dashed = 1px dashed rgba(63, 11, 11, 0.3);
+text_shadow = 1px 1px 3px white
+link_color = #1783b6
+in_post_title = #358340
+
+body
+    font: 150%/160% Georgia, serif
+    padding 0
+    margin 0
+    background url(../images/wavegrid.png)
+    text-shadow text_shadow
+    color text_color
+
+h1, h2, h3, h4, h5
+    font-weight normal
+
+a
+    color link_color
+    transition(all, 0.3s, ease)
+    &:hover
+        background link_color
+        color white
+        text-shadow none
+        text-decoration none
+
+img
+    max-width 100%
+    display block
+    text-align center
+    margin auto
+
+.if iframe,
+.if object,
+.if embed
+  /*position: absolute;*/
+  max-width 100%
+
+body > header
+    padding .5em 20% 1em 20%
+    margin-bottom 2em
+    border-bottom border_dashed
+    text-align center
+    h2
+        font-size 1.4em
+        margin-top .5em
+        margin-bottom 0
+        a
+            color text_color
+            text-decoration none
+            &:hover
+                color link_color
+                text-decoration underline
+                background none
+    h3
+        font-size 1em
+        margin-top .5em
+        margin-bottom 0
+
+body > footer
+    padding .5em 20% 1em 20%
+    text-align center
+    border-top border_dashed
+
+.pagination
+    padding .5em 20% .5em 20%
+    text-align center
+    border-top border_dashed
+    ul
+        padding 0
+        li
+            display inline-block
+            margin 0 auto
+            width 1.5em
+            height 1.5em
+            background white
+            border-radius 50%
+            margin-bottom .5em
+            a
+                display block
+                width 1.5em
+                height 1.5em
+                border-radius 50%
+                text-decoration none
+
+.tags
+.date
+    font-size .7em
+    font-style italic
+
+.copyrights
+    font-size .7em
+    font-style italic
+    &:before
+        content "\00a9"
+        margin-right .5em
+
+.posts_list
+    padding 0 20% 2em 20%
+    text-align center
+    ul
+        padding 0
+        li
+            list-style none
+            h1, .date
+                display inline-block
+            h1
+                font-size 1em
+                margin 0
+                a
+                    text-decoration none
+
+.posts
+    .post
+        margin-bottom 2em
+        border-bottom border_dashed
+        &:last-child
+            border-bottom none
+            margin-bottom 0em
+
+.post
+    padding 0 20% 2em 20%
+    header
+        text-align center
+        h1
+            font-size 2em
+            margin-bottom .2em
+            a
+                color text_color
+                text-decoration none
+                &:hover
+                    color link_color
+                    text-decoration underline
+                    background none
+    article
+        h2
+        h3
+        h4
+        h5
+            color in_post_title
+        table
+            width 100%
+            margin auto
+            margin-bottom 1em
+            tr
+                th
+                    font-weight bold
+                th
+                td
+                    text-align center
+                    vertical-align middle
+                    padding .2em
+                    margin 0
+                    background #dfdfdf
+                // &:nth-child(2n+1)
+                //     td
+                //         background #d5d5d5
+                &:hover
+                    td
+                        background #d5d5d5
+        blockquote
+            margin-left 0
+            margin-right 0
+            padding .3em 2em
+            background rgba(255,255,255,.4)
+            border-bottom border_dashed
+            border-top border_dashed
+    footer
+        text-align center

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block header %}
+<!-- header -->
+<header>
+    <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
+    <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3>
+</header>
+<!-- /header -->
+{% endblock header %}
+
+{% block content %}
+{% with pages=pages  %}
+    {% include "_list.html" %}
+{% endwith %}
+{% endblock content %}

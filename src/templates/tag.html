@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Записи с тэгом {{ tag }} - {% endblock title %}
+
+{% block header %}
+<!-- header -->
+<header>
+    <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
+</header>
+<!-- /header -->
+{% endblock header %}
+
+{% block content %}
+{% with pages=pages  %}
+    {% include "_archive.html" %}
+{% endwith %}
+{% endblock content %}

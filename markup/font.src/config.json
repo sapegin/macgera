@@ -1,0 +1,261 @@
+{
+  "name": "icons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "glyphs": [
+    {
+      "search": [
+        "attention",
+        "warning",
+        "alert"
+      ],
+      "code": 9888,
+      "from": 9888,
+      "uid": "97ac1a82370ae58f02e4ff1bdc58ee86",
+      "css": "attention",
+      "orig_css": "attention",
+      "orig_code": 9888,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "twitter"
+      ],
+      "code": 100,
+      "uid": "26969cfbd811730075e4c657cc9fda2a",
+      "css": "twitter",
+      "orig_css": "twitter",
+      "orig_code": 100,
+      "src": "elusive",
+      "from": 57368
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "stackoverflow"
+      ],
+      "code": 115,
+      "uid": "a5e7f5574a71d31bdf2012f0c2acb2a3",
+      "css": "stackoverflow",
+      "orig_css": "stackoverflow",
+      "orig_code": 115,
+      "src": "elusive",
+      "from": 57394
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "linkedin"
+      ],
+      "code": 97,
+      "uid": "09cad6e46ec29b279626434802012bba",
+      "css": "linkedin",
+      "orig_css": "linkedin",
+      "orig_code": 97,
+      "src": "elusive",
+      "from": 57473
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "instagram"
+      ],
+      "code": 92,
+      "uid": "94ca559902b8930f0b267a588ffddb0b",
+      "css": "instagram",
+      "orig_css": "instagram",
+      "orig_code": 92,
+      "src": "elusive",
+      "from": 57480
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "facebook"
+      ],
+      "code": 112,
+      "uid": "c99e966e3d22ec0b9d8678fd524e5512",
+      "css": "facebook",
+      "orig_css": "facebook",
+      "orig_code": 112,
+      "src": "elusive",
+      "from": 57500
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "github"
+      ],
+      "code": 91,
+      "uid": "aa18911cd641967c899c575aeb80cd7e",
+      "css": "github",
+      "orig_css": "github",
+      "orig_code": 91,
+      "src": "elusive",
+      "from": 57526
+    },
+    {
+      "search": [
+        "social",
+        "logo",
+        "google plus"
+      ],
+      "code": 93,
+      "uid": "a58fe946fe31826f0b19cb4dfaaf13d2",
+      "css": "googleplus",
+      "orig_css": "googleplus",
+      "orig_code": 93,
+      "src": "elusive",
+      "from": 57596
+    },
+    {
+      "search": [
+        "tag",
+        "category",
+        "price",
+        "offer"
+      ],
+      "code": 114,
+      "from": 59149,
+      "uid": "a3f89e106175a5c5c4e9738870b12e55",
+      "css": "tags",
+      "orig_css": "tags",
+      "orig_code": 114,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "github",
+        "social",
+        "logo"
+      ],
+      "code": 121,
+      "uid": "3261112d66c6462ea20893f42b6f799b",
+      "css": "github-circled",
+      "orig_css": "github-circled",
+      "orig_code": 121,
+      "src": "mfglabs",
+      "from": 61524
+    },
+    {
+      "search": [
+        "github",
+        "social",
+        "logo"
+      ],
+      "code": 116,
+      "uid": "9ea28ba01d59a4410fa3db9c02cce157",
+      "css": "github-1",
+      "orig_css": "github",
+      "orig_code": 116,
+      "src": "mfglabs",
+      "from": 61525
+    },
+    {
+      "search": [
+        "twitter",
+        "social",
+        "logo"
+      ],
+      "code": 117,
+      "uid": "ccf7ed45e7f05a89376f38abaa9d7d13",
+      "css": "twitter-circled",
+      "orig_css": "twitter-circled",
+      "orig_code": 117,
+      "src": "mfglabs",
+      "from": 61527
+    },
+    {
+      "search": [
+        "google",
+        "plus",
+        "social",
+        "logo"
+      ],
+      "code": 105,
+      "uid": "fef29532e2318a0c604f34947024b990",
+      "css": "gplus-circled",
+      "orig_css": "gplus-circled",
+      "orig_code": 105,
+      "src": "mfglabs",
+      "from": 61529
+    },
+    {
+      "search": [
+        "linkedin"
+      ],
+      "code": 111,
+      "meta": {
+        "homepage": "http://openiconlibrary.sourceforge.net",
+        "author": "Open Icon Library"
+      },
+      "uid": "542e3f055aaa4ddfb9ab3e00397db47f",
+      "file": "linkedin",
+      "css": "linkedin-1",
+      "orig_css": "linkedin",
+      "orig_code": 111,
+      "src": "brandico",
+      "from": 62234
+    },
+    {
+      "search": [
+        "smashing",
+        "social",
+        "logo"
+      ],
+      "code": 101,
+      "uid": "2e97984c1130787e123117d4cacc07fa",
+      "css": "smashing",
+      "orig_css": "smashing",
+      "orig_code": 101,
+      "src": "entypo",
+      "from": 62295
+    },
+    {
+      "search": [
+        "mic"
+      ],
+      "code": 119,
+      "uid": "1e099a876c8a6a83f10c9bafa9886614",
+      "css": "mic",
+      "orig_css": "mic",
+      "orig_code": 119,
+      "src": "entypo",
+      "from": 127908
+    },
+    {
+      "search": [
+        "profile",
+        "contact",
+        "user"
+      ],
+      "code": 102,
+      "from": 128100,
+      "uid": "fd3128bf109153952b1b775ea574504b",
+      "css": "user-1",
+      "orig_css": "user",
+      "orig_code": 102,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "camera",
+        "photo"
+      ],
+      "code": 113,
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera",
+      "orig_css": "camera",
+      "orig_code": 113,
+      "src": "entypo",
+      "from": 128247
+    }
+  ]
+}
