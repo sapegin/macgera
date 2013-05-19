@@ -163,6 +163,7 @@ body > footer {
 .post article h4,
 .post article h5 {
   color: #358340;
+  text-align: center;
 }
 .post article table {
   width: 100%;
