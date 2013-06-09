@@ -1,7 +1,7 @@
 title: Короткометражный фильм на свободном ПО.
 date: 2012-09-27
 type: blog
-tags: [Видео, Свободное ПО]
+tags: [Кино, Свободное ПО]
 
 Помню [BlenderFoundation](http://www.blender.org/blenderorg/blender-foundation/) показали миру мультик про [Дракона и девочку](http://www.youtube.com/watch?v=utyPyVBv0-4). Я тогда сильно удивился тому что есть таки жизнь на свободном софте. 
 
