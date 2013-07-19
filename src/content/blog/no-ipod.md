@@ -1,7 +1,7 @@
 title: Не выиграл iPod. Odessa JS.
 date: 2013-04-13
 type: blog
-tags: [Событие]
+tags: [Событие, Одесса]
 
 Не выиграл iPod. Odessa JS. 
 
