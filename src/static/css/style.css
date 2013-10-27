@@ -12,6 +12,7 @@ h3,
 h4,
 h5 {
   font-weight: normal;
+  line-height: 1;
 }
 a {
   color: #1783b6;
@@ -194,4 +195,38 @@ body > footer {
 }
 .post footer {
   text-align: center;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    font-size: 200%;
+  }
+  body > header {
+    padding: 0.5em 5% 1em 5%;
+  }
+  body > footer {
+    padding: 0.5em 5% 1em 5%;
+  }
+  .post {
+    padding: 0 5% 2em 5%;
+  }
+  .pagination {
+    padding: 0.5em 5% 0.5em 5%;
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    font-size: 150%;
+  }
+  body > header {
+    padding: 0.5em 10% 1em 10%;
+  }
+  body > footer {
+    padding: 0.5em 10% 1em 10%;
+  }
+  .post {
+    padding: 0 10% 2em 10%;
+  }
+  .pagination {
+    padding: 0.5em 10% 0.5em 10%;
+  }
 }
