@@ -31,7 +31,6 @@
 <!-- pagination -->
 <nav class="pagination">
      <ul>
-        <ul>
         {% if pagination.has_prev %}
         <li>
             <a href="{{ url_for(section, page=pagination.page - 1) }}">&#8592;</a>
@@ -59,7 +58,6 @@
             <a href="{{ url_for(section, page=pagination.page + 1) }}">&#8594;</a>
         </li>
         {% endif %}
-    </ul>
     </ul>
 </nav>
 <!-- /pagination -->
