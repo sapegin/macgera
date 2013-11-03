@@ -1,3 +1,5 @@
 *.pyc
-
-markup/.sass-cache
+app/build
+req_draft.txt
+html/.sass-cache
+html/css
