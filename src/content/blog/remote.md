@@ -2,6 +2,8 @@ title: Удаленно работать лучше!
 date: 2013-11-12
 type: blog
 tags: [Работа, Удаленная работа]
+googleplus: z12bxpeh2lacd3jf022dv35abvv2ghjzy04
+googleplus_link: https://plus.google.com/+%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%AF%D0%BA%D0%B8%D0%BC%D0%B5%D0%BD%D0%BA%D0%BE/posts/H8xK5BLJ3Cr
 
 Работа – наверное один из правильных и лучших способов самовыражения. Так уж сложилось, что работая в разных сферах, я тянулся к своей мечте – стать программистом.
 
