@@ -197,55 +197,6 @@ body > footer {
 .post footer .tags {
   text-align: center;
 }
-.post footer h4.comments_title {
-  margin-top: 1em;
-  margin-bottom: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-top: 1px solid #808080;
-  border-bottom: 1px dashed rgba(63,11,11,0.3);
-}
-.post footer dl.comments_list {
-  text-align: left;
-  margin-top: 0;
-}
-.post footer dl.comments_list dt,
-.post footer dl.comments_list dd {
-  padding: 0;
-  margin: 0;
-}
-.post footer dl.comments_list dt {
-  padding-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-.post footer dl.comments_list dt:nth-child(1) {
-  margin-top: 0;
-}
-.post footer dl.comments_list dt a {
-  display: inline-block;
-  vertical-align: middle;
-}
-.post footer dl.comments_list dt a.author {
-  margin-left: 0.4em;
-}
-.post footer dl.comments_list dt a img {
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid #fff;
-  border-radius: 100%;
-}
-.post footer dl.comments_list dt .date {
-  display: inline-block;
-  vertical-align: middle;
-}
-.post footer dl.comments_list dd {
-  border-bottom: 1px dashed rgba(63,11,11,0.3);
-  padding-bottom: 0.5em;
-}
-.post footer .g-commentlink {
-  font-size: 0.7em;
-  font-style: italic;
-}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   body {
     font-size: 200%;
