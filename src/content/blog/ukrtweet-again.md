@@ -1,4 +1,4 @@
-title: Баркемп ukrtweet в третий раз.
+title: Баркемп ukrtweet в третий раз
 date: 2012-03-26
 type: blog
 tags: [Событие, Твиттер]

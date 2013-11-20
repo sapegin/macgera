@@ -1,4 +1,4 @@
-title: Глобальный AppStore.
+title: Глобальный AppStore
 date: 2012-02-26
 type: blog
 tags: [Программы, ОС]

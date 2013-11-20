@@ -99,7 +99,8 @@ body > footer {
   text-decoration: none;
 }
 .tags,
-.date {
+.date,
+.meta_text {
   font-size: 0.7em;
   font-style: italic;
 }
@@ -193,7 +194,7 @@ body > footer {
   border-bottom: 1px dashed rgba(63,11,11,0.3);
   border-top: 1px dashed rgba(63,11,11,0.3);
 }
-.post footer {
+.post footer .tags {
   text-align: center;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

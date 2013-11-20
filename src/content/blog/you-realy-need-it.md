@@ -1,4 +1,4 @@
-title: Вам это нужно?!
+title: Вам это нужно
 date: 2012-04-01
 type: blog
 tags: [ux, Интернет]

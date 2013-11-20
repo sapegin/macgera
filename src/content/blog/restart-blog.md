@@ -1,4 +1,4 @@
-title: Новое перерождение блога.
+title: Новое перерождение блога
 date: 2013-04-23
 type: blog
 tags: [Блог, Python, github, git, markdown]

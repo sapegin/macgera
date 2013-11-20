@@ -1,4 +1,4 @@
-title: Событие ukrtweet моими глазами.
+title: Событие ukrtweet моими глазами
 date: 2011-03-28
 type: blog
 tags: [Событие, Твиттер]

@@ -16,7 +16,7 @@ FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
 BASE_URL = 'http://macgera.name'
 FREEZER_BASE_URL = 'http://macgera.name'
-FREEZER_DESTINATION = '/Users/mihail/projects/macgera.github.io'
+FREEZER_DESTINATION = '../macgera.github.io'
 FREEZER_DESTINATION_IGNORE = ['.git*', 'CNAME']
 FREEZER_RELATIVE_URLS = False
 PER_PAGE = 5
@@ -28,17 +28,8 @@ app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
 
-# environment = Environment()
-
-# def tagstr(value):
-#     value = translify(value)
-#     return value
-
-# app.jinja_env.filters['tagstr'] = tagstr
-
-
 # get posts
-def get_posts():
+def get_posts(year=None):
     blog = (p for p in pages if 'blog' in p.meta.values())
     posts = sorted(blog, reverse=True, key=lambda p: p.meta['date'])
     return posts
@@ -51,6 +42,11 @@ def get_tags():
             f.append(a)
     tags = sorted(set(f))
     return tags
+
+def get_years(pages):
+    years = list(set([page.meta.get('date').year for page in pages]))
+    years.reverse()
+    return years
 
 def get_taget(tag):
     tagged = [p for p in pages if tag in p.meta.get('tags', [])]
@@ -79,6 +75,12 @@ def feed():
     now = datetime.now()
     return render_template('base.rss', pages = pages, build_date = now)
 
+@app.route('/archive/')
+def archive():
+    years = get_years(get_posts())
+    pages = get_posts()
+    return render_template('archive.html', pages=pages, years = years)
+
 def make_external(url):
     return urljoin(request.url_root, url)
 
@@ -87,9 +89,6 @@ def make_external(url):
 def pages_frozen():
     for page in pages:
         yield '/%s/' % page.path
-
-# if app.debug:
-#       sass(app)
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":

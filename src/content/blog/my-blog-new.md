@@ -1,4 +1,4 @@
-title: Новый блог!
+title: Новый блог
 date: 2011-09-22
 type: blog
 tags: [Блог, Django]

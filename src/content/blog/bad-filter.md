@@ -1,4 +1,4 @@
-title: Плохой фильтр.
+title: Плохой фильтр
 date: 2012-11-14
 type: blog
 tags: [ux]

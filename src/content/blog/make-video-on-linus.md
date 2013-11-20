@@ -1,4 +1,4 @@
-title: Видеомонтаж на Linux.
+title: Видеомонтаж на Linux
 date: 2012-12-10
 type: blog
 tags: [Linux, Свободное ПО]

@@ -1,4 +1,4 @@
-title: Yo, también. Это стоит посмотреть!
+title: Yo, también – Это стоит посмотреть
 date: 2011-05-27
 type: blog
 tags: [Философия, Мир]

@@ -1,4 +1,4 @@
-title: Найти html/css разработчика.
+title: Найти html/css разработчика
 date: 2012-10-30
 type: blog
 tags: [css, html, Работа]

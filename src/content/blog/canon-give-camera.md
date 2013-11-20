@@ -1,4 +1,4 @@
-title: Canon дайте мне фотоаппарат!
+title: Canon дайте мне фотоаппарат
 date: 2013-10-27
 type: blog
 tags: [Canon, protoria, Обращение]

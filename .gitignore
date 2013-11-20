@@ -3,3 +3,4 @@ app/build
 req_draft.txt
 html/.sass-cache
 html/css
+.DS_Store
