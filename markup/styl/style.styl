@@ -123,13 +123,21 @@ body > footer
         padding 0
         li
             list-style none
-            h1, .date
-                display inline-block
+            &:after
+                content '\2053'
+            &:nth-last-child(1)
+                &:after
+                    content none
+            .date
+                color #9B9B9B
+            .tags
+                font-size .6em
             h1
                 font-size 1em
                 margin 0
                 a
                     text-decoration none
+
 
 .posts
     .post

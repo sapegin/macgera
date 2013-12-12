@@ -56,7 +56,6 @@ body > header h2 {
   margin-bottom: 0;
 }
 body > header h2 a {
-  color: #303030;
   text-decoration: none;
 }
 body > header h2 a:hover {
@@ -68,6 +67,17 @@ body > header h3 {
   font-size: 1em;
   margin-top: 0.5em;
   margin-bottom: 0;
+}
+body > header ul {
+  margin: 0;
+  padding: 0;
+}
+body > header ul li {
+  display: inline;
+}
+body > header ul li a {
+  text-shadow: none;
+  font-size: 0.9em;
 }
 body > footer {
   padding: 0.5em 20% 1em 20%;
@@ -122,9 +132,17 @@ body > footer {
 .posts_list ul li {
   list-style: none;
 }
-.posts_list ul li h1,
+.posts_list ul li:after {
+  content: '\2053';
+}
+.posts_list ul li:nth-last-child(1):after {
+  content: none;
+}
 .posts_list ul li .date {
-  display: inline-block;
+  color: #9b9b9b;
+}
+.posts_list ul li .tags {
+  font-size: 0.6em;
 }
 .posts_list ul li h1 {
   font-size: 1em;
