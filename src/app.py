@@ -28,6 +28,16 @@ app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
 
+# add more filter
+def more(value):
+    if '!more' in value:
+        value = value.replace('!more', '<!--more-->')
+        return value.split('<!--more-->')[0]
+    else:
+        return value
+
+app.jinja_env.filters['more'] = more
+
 # get posts
 def get_posts(year=None):
     blog = (p for p in pages if 'blog' in p.meta.values())
