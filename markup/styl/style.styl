@@ -34,7 +34,7 @@ text_color = #303030
 border_dashed = 1px dashed rgba(63, 11, 11, 0.3);
 border_solid = 1px solid rgba(63, 11, 11, .1);
 text_shadow = 1px 1px 3px white
-link_color = #27ae60
+link_color = #2980b9
 in_post_title = #358340
 
 body
@@ -188,14 +188,10 @@ body > footer
 
 .posts
     .post
-        margin-bottom 0
+        margin-bottom 1em
         border-bottom border_solid
-        &:nth-child(1)
-            border_radius(.2em, .2em, 0, 0)
         &:nth-last-child(1)
-            border-bottom none
-            margin-bottom 0em
-            border_radius(0, 0, .2em, .2em)
+            margin-bottom 0
 
 .post
     box()
@@ -254,16 +250,21 @@ body > footer
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 
     body
-        font-size 200%
+        font-size 260%
 
     body > header
         padding .5em 5% 1em 5%
+        .portrait
+            width 20%
 
     body > footer
         padding .5em 5% 1em 5%
 
     .post
-        padding 0 5% 2em 5%
+        box()
+        margin 0 2% 0 2%
+        article
+            font-size 1.2em
 
     .pagination
         padding .5em 5% .5em 5%
@@ -275,12 +276,15 @@ body > footer
 
     body > header
         padding .5em 10% 1em 10%
+        .portrait
+            width 20%
 
     body > footer
         padding .5em 10% 1em 10%
 
     .post
-        padding 0 10% 2em 10%
+        box()
+        margin 0 6% 0 6%
 
     .pagination
         padding .5em 10% .5em 10%
