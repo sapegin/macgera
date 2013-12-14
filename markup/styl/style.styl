@@ -9,18 +9,39 @@ transition(p, d, t)
     -o-transition-duration: d;
     -o-transition-timing-function: t;
 
+border_radius(a, b, c, d)
+    -webkit-border-radius: a b c d;
+    border-radius: a b c d;
+
+border_radius_all(a)
+    -webkit-border-radius: a;
+    border-radius: a;
+
+inline_middle()
+    display inline-block
+    vertical-align middle
+
+inline_top()
+    display inline-block
+    vertical-align top
+
+box()
+    box-sizing border-box
+    -moz-box-sizing border-box
+    -webkit-box-sizing border-box
+
 text_color = #303030
 border_dashed = 1px dashed rgba(63, 11, 11, 0.3);
+border_solid = 1px solid rgba(63, 11, 11, .1);
 text_shadow = 1px 1px 3px white
-link_color = #1783b6
+link_color = #27ae60
 in_post_title = #358340
 
 body
     font: 150%/160% Georgia, serif
     padding 0
     margin 0
-    background url(../images/wavegrid.png)
-    text-shadow text_shadow
+    background #ecf0f1
     color text_color
 
 h1, h2, h3, h4, h5
@@ -30,10 +51,10 @@ h1, h2, h3, h4, h5
 a
     color link_color
     transition(all, 0.3s, ease)
+    // border_radius_all(.2em)
     &:hover
-        background link_color
-        color white
-        text-shadow none
+        // background link_color
+        // color white
         text-decoration none
 
 img
@@ -49,59 +70,77 @@ img
   max-width 100%
 
 body > header
-    padding .5em 20% 1em 20%
-    margin-bottom 2em
-    border-bottom border_dashed
+    margin 1em 10% 1em 10%
     text-align center
+    .portrait
+        width 8%
+        margin auto
+        img
+            max-width 100%
+            border_radius_all(100%)
+            border 3px solid white
     h2
         font-size 1.4em
-        margin-top .5em
+        margin-top 0
         margin-bottom 0
+        position relative
         a
+            color text_color
             text-decoration none
             &:hover
-                color link_color
                 text-decoration underline
-                background none
     h3
         font-size 1em
-        margin-top .5em
+        margin-top 0
         margin-bottom 0
     ul
         margin 0
         padding 0
         li
-            display inline
+            inline_middle()
+            padding 0
+            margin-left -.3em
+            &:after
+                content '\272A'
+                margin 0 .4em
+                inline_middle()
+                font-size .7em
+                color #C2C2C2
+            &:nth-last-child(1)
+                &:after
+                    content none
             a
-                // color #fff
-                text-shadow none
-                font-size .9em
+                font-size .8em
+
 
 body > footer
-    padding .5em 20% 1em 20%
+    margin 0 20% 1em 20%
     text-align center
-    border-top border_dashed
 
 .pagination
-    padding .5em 20% .5em 20%
+    padding .5em 20% 0 20%
     text-align center
-    border-top border_dashed
     ul
         padding 0
+        margin-bottom 0
         li
             display inline-block
             margin 0 auto
             width 1.5em
             height 1.5em
             background white
-            border-radius 50%
+            border-radius .2em
             margin-bottom .5em
             a
                 display block
                 width 1.5em
                 height 1.5em
-                border-radius 50%
+                border-radius .2em
                 text-decoration none
+                &:hover
+                    background link_color
+                    color white
+                    text-decoration none
 
 .tags
 .date
@@ -117,17 +156,25 @@ body > footer
         margin-right .5em
 
 .posts_list
-    padding 0 20% 2em 20%
+    margin 0 20% 2em 20%
+    background #fff
+    border_radius_all(.4em)
     text-align center
+    h3
+        padding-top .5em
+        margin-bottom 0
     ul
         padding 0
+        margin-top .5em
         li
+            box()
+            padding .1em
             list-style none
-            &:after
-                content '\2053'
+            border-bottom border_solid
+            &:nth-child(1)
+                border-top border_solid
             &:nth-last-child(1)
-                &:after
-                    content none
+                border-bottom none
             .date
                 color #9B9B9B
             .tags
@@ -141,19 +188,26 @@ body > footer
 
 .posts
     .post
-        margin-bottom 2em
-        border-bottom border_dashed
-        &:last-child
+        margin-bottom 0
+        border-bottom border_solid
+        &:nth-child(1)
+            border_radius(.2em, .2em, 0, 0)
+        &:nth-last-child(1)
             border-bottom none
             margin-bottom 0em
+            border_radius(0, 0, .2em, .2em)
 
 .post
-    padding 0 20% 2em 20%
+    box()
+    margin 0 10% 0 10%
+    padding 1.2em
+    background #fff
+    border_radius_all(.2em)
     header
         text-align center
         h1
-            font-size 2em
-            margin-bottom .2em
+            font-size 1.4em
+            margin 0
             a
                 color text_color
                 text-decoration none
@@ -181,10 +235,7 @@ body > footer
                     vertical-align middle
                     padding .2em
                     margin 0
-                    background #dfdfdf
-                // &:nth-child(2n+1)
-                //     td
-                //         background #d5d5d5
+                    background #ecf0f1
                 &:hover
                     td
                         background #d5d5d5
@@ -192,9 +243,9 @@ body > footer
             margin-left 0
             margin-right 0
             padding .3em 2em
-            background rgba(255,255,255,.4)
-            border-bottom border_dashed
-            border-top border_dashed
+            background #ecf0f1
+            border-bottom border_solid
+            border-top border_solid
     footer
         .tags
             text-align center
