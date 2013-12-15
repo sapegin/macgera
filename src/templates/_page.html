@@ -3,7 +3,7 @@
     <header>
         <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
         {% if page.meta.type=='blog' %}
-        <span class="date">Опубликованно {{ page.date }}</span>
+        <span class="date">Опубліковано {{ page.date }}</span>
         {% endif %}
     </header>
     <article>
@@ -19,7 +19,7 @@
             {% endif %}
         </div>
         <div class="comments">
-            {% if page.meta.type=='blog' %}
+            {% if page.meta.type=='zoo' %}
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
                     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

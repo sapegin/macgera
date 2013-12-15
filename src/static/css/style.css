@@ -116,6 +116,7 @@ body > footer {
   background: #fff;
   border-radius: 0.2em;
   margin-bottom: 0.5em;
+  border-bottom: 2px solid rgba(61,61,61,0.2);
 }
 .pagination ul li a {
   display: block;
@@ -164,10 +165,10 @@ body > footer {
   -webkit-box-sizing: border-box;
   padding: 0.1em;
   list-style: none;
-  border-bottom: 1px solid rgba(63,11,11,0.1);
+  border-bottom: 2px solid rgba(61,61,61,0.2);
 }
 .posts_list ul li:nth-child(1) {
-  border-top: 1px solid rgba(63,11,11,0.1);
+  border-top: 2px solid rgba(61,61,61,0.2);
 }
 .posts_list ul li:nth-last-child(1) {
   border-bottom: none;
@@ -187,7 +188,7 @@ body > footer {
 }
 .posts .post {
   margin-bottom: 1em;
-  border-bottom: 1px solid rgba(63,11,11,0.1);
+  border-bottom: 2px solid rgba(61,61,61,0.2);
 }
 .posts .post:nth-last-child(1) {
   margin-bottom: 0;
@@ -249,8 +250,8 @@ body > footer {
   margin-right: 0;
   padding: 0.3em 2em;
   background: #ecf0f1;
-  border-bottom: 1px solid rgba(63,11,11,0.1);
-  border-top: 1px solid rgba(63,11,11,0.1);
+  border-bottom: 2px solid rgba(61,61,61,0.2);
+  border-top: 2px solid rgba(61,61,61,0.2);
 }
 .post footer .tags {
   text-align: center;
