@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Записи с тэгом {{ tag }} - {% endblock title %}
+{% block title %}Записи з ярликом {{ tag }} - {% endblock title %}
 
 {% block header %}
 <!-- header -->
@@ -9,13 +9,9 @@
         <a href="{{ url_for("index") }}"><img src="https://lh5.googleusercontent.com/-Igz9tgs1bEY/Ubc6Ds9KGuI/AAAAAAAABRY/If3zf-cwMXM/s296-no/jpeg.jpeg" alt=""></a>
     </div>
     <div class="title">
-        <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
-        <!-- <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3> -->
-        <ul>
-            <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-            <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-            <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
-        </ul>
+        <h2><a href="{{ url_for("index") }}">Блоґ Михайла Якименка</a></h2>
+        <!-- <h3>тут можливо щось колись буде.</h3> -->
+        {% include "_menu.html" %}
     </div>
 </header>
 <!-- /header -->

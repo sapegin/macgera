@@ -12,7 +12,7 @@
     <footer>
         <div class="tags">
             {% if page.meta.tags|length %}
-                метки:
+                ярлики:
                 {% for page_tag in page.meta.tags %}
                     <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
                 {% endfor %}
