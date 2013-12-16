@@ -6,7 +6,7 @@
         <header>
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
             {% if page.meta.type=='blog' %}
-            <span class="date">Опубликованно {{ page.date }}</span>
+            <span class="date">Опубліковано {{ page.date }}</span>
             {% endif %}
         </header>
         <article>
@@ -15,7 +15,7 @@
         <footer>
             <div class="tags">
                 {% if page.meta.tags|length %}
-                    метки:
+                    ярлики:
                     {% for page_tag in page.meta.tags %}
                         <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
                     {% endfor %}
