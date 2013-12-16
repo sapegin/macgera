@@ -3,7 +3,7 @@
     <header>
         <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
         {% if page.meta.type=='blog' %}
-        <span class="date">Опубликованно {{ page.date }}</span>
+        <span class="date">Опубликовано {{ page.date }}</span>
         {% endif %}
     </header>
     <article>
