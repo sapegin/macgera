@@ -28,7 +28,7 @@
         <li>
             <span class="date">{{ page.date }}</span>
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
-            <div class="tags">метки: 
+            <div class="tags">ярлики: 
             {% if page.meta.tags|length %}
                 {% for page_tag in page.meta.tags %}
                 <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
