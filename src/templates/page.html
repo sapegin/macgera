@@ -2,25 +2,6 @@
 
 {% block title %}{{ page.title }} - {% endblock title %}
 
-{% block header %}
-<!-- header -->
-<header>
-    <div class="portrait">
-        <a href="{{ url_for("index") }}"><img src="https://lh5.googleusercontent.com/-Igz9tgs1bEY/Ubc6Ds9KGuI/AAAAAAAABRY/If3zf-cwMXM/s296-no/jpeg.jpeg" alt=""></a>
-    </div>
-    <div class="title">
-        <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
-        <!-- <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3> -->
-        <ul>
-            <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-            <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-            <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
-        </ul>
-    </div>
-</header>
-<!-- /header -->
-{% endblock header %}
-
 {% block content %}
 {% with page=page  %}
     {% include "_page.html" %}

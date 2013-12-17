@@ -1,24 +1,5 @@
 {% extends "base.html" %}
 
-{% block header %}
-<!-- header -->
-<header>
-    <div class="portrait">
-        <img src="https://lh5.googleusercontent.com/-Igz9tgs1bEY/Ubc6Ds9KGuI/AAAAAAAABRY/If3zf-cwMXM/s296-no/jpeg.jpeg" alt="">
-    </div>
-    <div class="title">
-        <h2>Блог Михаила Якименко</h2>
-        <!-- <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3> -->
-        <ul>
-            <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-            <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-            <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
-        </ul>
-    </div>
-</header>
-<!-- /header -->
-{% endblock header %}
-
 {% block content %}
 {% with pages=pages  %}
     {% include "_list.html" %}

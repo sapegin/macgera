@@ -19,8 +19,22 @@
 <!-- For Ukraine freedom! For Eropean PEOPLE! -->
 <a href="http://stfalcon.github.io/euromaidan/" class="em-ribbon" style="position: absolute; left:0; top:0; width: 90px; height: 90px; background: url('http://stfalcon.github.io/euromaidan/img/em-ribbon.png'); z-index: 2013; border: 0;"></a>
 
-{% block header %}
-{% endblock header %}
+<!-- header -->
+<header>
+<div class="portrait">
+        <a href="{{ url_for("index") }}"><img src="https://lh5.googleusercontent.com/-Igz9tgs1bEY/Ubc6Ds9KGuI/AAAAAAAABRY/If3zf-cwMXM/s296-no/jpeg.jpeg" alt=""></a>
+    </div>
+    <div class="title">
+        <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
+        <!-- <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3> -->
+        <ul>
+            <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
+            <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
+            <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
+        </ul>
+    </div>
+</header>
+<!-- /header -->
 
 {% block content %}
 {% endblock content %}

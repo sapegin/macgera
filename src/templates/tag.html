@@ -11,11 +11,7 @@
     <div class="title">
         <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
         <!-- <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3> -->
-        <ul>
-            <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-            <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-            <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
-        </ul>
+        {% include "_menu.html" %}
     </div>
 </header>
 <!-- /header -->
