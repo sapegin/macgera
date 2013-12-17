@@ -107,7 +107,7 @@ body > header ul li a {
   font-size: 0.8em;
 }
 body > footer {
-  margin: 0 20% 1em 20%;
+  margin: 1em 20% 1em 20%;
   text-align: center;
 }
 .pagination {
