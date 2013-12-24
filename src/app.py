@@ -14,11 +14,6 @@ DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
-BASE_URL = 'http://macgera.name'
-FREEZER_BASE_URL = 'http://macgera.name'
-FREEZER_DESTINATION = '../macgera.github.io'
-FREEZER_DESTINATION_IGNORE = ['.git*', 'CNAME']
-FREEZER_RELATIVE_URLS = False
 PER_PAGE = 5
 FEED_MAX_LINKS = 5
 
@@ -26,7 +21,6 @@ FEED_MAX_LINKS = 5
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
-freezer = Freezer(app)
 
 # add more filter
 def more(value):
@@ -94,14 +88,10 @@ def archive():
 def make_external(url):
     return urljoin(request.url_root, url)
 
-# url for freeze
-@freezer.register_generator
-def pages_frozen():
-    for page in pages:
-        yield '/%s/' % page.path
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1] == "build":
-        freezer.freeze()
-    else:
-        app.run(port=8000)
+    app.run(port=8000)
