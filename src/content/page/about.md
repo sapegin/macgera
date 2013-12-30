@@ -4,9 +4,6 @@ title: Обо мне и блоге
 
 Минимализм как стиль жизни, аскеза как просветление!
 
-### Профили на различных социальных ресурсах
-[Facebook](http://facebook.com/mihail.yakimenko), [Google +](https://plus.google.com/109863761092133260760/), [linkedIn](https://linkedin.com/in/myakimenko), [twitter](http://twitter.com/#!/macgera), [github](https://github.com/macgera), [oDesk](https://www.odesk.com/users/Expert-html-css-coding-Experience-from-2004_~~324698726c9323ba?_redirected), [Habr](http://habrahabr.ru/users/macgera/)
-
 ### Контакты
 
 * Почта: [macgera@gmail.com](mailto:macgera@gmail.com)

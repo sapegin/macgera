@@ -5,3 +5,4 @@ html/.sass-cache
 html/css
 .DS_Store
 .shipit
+node_modules

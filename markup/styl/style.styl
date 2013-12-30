@@ -85,6 +85,10 @@ img
     iframe
         margin auto !important
 
+.icon
+    font-family icons
+    text-decoration none
+
 body > header
     margin 1em 10% 1em 10%
     text-align center
@@ -127,11 +131,33 @@ body > header
                     content none
             a
                 font-size .8em
+ul.social
+    li
+        margin-right .5em
+        &:nth-last-child(1)
+            margin-right 0
+        &:after
+            content none
+        a.icon
+            inline_middle()
+            box()
+            width 1.4em
+            height 1.4em
+            line-height 1
+            padding .2em
+            color #a3a3a3
+            text-shadow 1px 1px 2px #fff
+            border_radius_all(.2em)
+            &:hover
+                color black
+                
 
 
 body > footer
     margin 1em 20% 1em 20%
     text-align center
+    .icon
+        font-size .8em
 
 .pagination
     padding .5em 20% 0 20%
