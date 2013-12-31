@@ -1,20 +1,12 @@
 transition(p, d, t)
-    -webkit-transition-property: p;
-    -webkit-transition-duration: d;
-    -webkit-transition-timing-function: t;
-    -moz-transition-property: p;
-    -moz-transition-duration: d;
-    -moz-transition-timing-function: t;
-    -o-transition-property: p;
-    -o-transition-duration: d;
-    -o-transition-timing-function: t;
+    transition-property: p;
+    transition-duration: d;
+    transition-timing-function: t;
 
-border_radius(a, b, c, d)
-    -webkit-border-radius: a b c d;
+border_radius(a, b, c, d)   
     border-radius: a b c d;
 
 border_radius_all(a)
-    -webkit-border-radius: a;
     border-radius: a;
 
 inline_middle()
@@ -27,8 +19,6 @@ inline_top()
 
 box()
     box-sizing border-box
-    -moz-box-sizing border-box
-    -webkit-box-sizing border-box
 
 text_color = #303030
 border_dashed = 1px dashed rgba(63, 11, 11, 0.3);
@@ -37,13 +27,33 @@ border_solid_posts = 1px solid rgba(117, 117, 117, 0.4);
 text_shadow = 1px 1px 3px white
 link_color = #2980b9
 in_post_title = #358340
+post_background = rgba(255, 255, 255, 1)
 
 body
     font: 150%/160% Georgia, serif
     padding 0
     margin 0
-    background #ecf0f1
     color text_color
+    &.one
+        background url(../../images/car.jpg)
+        background-attachment fixed
+        background-position center center
+        background-size cover
+    &.two
+        background url(../../images/city.jpg)
+        background-attachment fixed
+        background-position center center
+        background-size cover
+    &.three
+        background url(../../images/rails.jpg)
+        background-attachment fixed
+        background-position center center
+        background-size cover
+    &.four
+        background url(../../images/car.jpg)
+        background-attachment fixed
+        background-position center center
+        background-size cover
 
 h1, h2, h3, h4, h5
     font-weight normal
@@ -104,7 +114,7 @@ body > header
         margin-bottom 0
         position relative
         a
-            color text_color
+            color #fff
             text-decoration none
             &:hover
                 text-decoration underline
@@ -130,6 +140,7 @@ body > header
                     content none
             a
                 font-size .8em
+                color #fff
 ul.social
     li
         margin-right .5em
@@ -144,8 +155,8 @@ ul.social
             height 1.4em
             line-height 1
             padding .2em
-            color #a3a3a3
-            text-shadow 1px 1px 2px #fff
+            color #fff
+            // text-shadow 1px 1px 2px #fff
             border_radius_all(.2em)
             &:hover
                 color black
@@ -191,6 +202,7 @@ body > footer
 .copyrights
     font-size .7em
     font-style italic
+    color #fff
     &:before
         content "\00a9"
         margin-right .5em
@@ -237,7 +249,7 @@ body > footer
     box()
     margin 0 10% 0 10%
     padding 1.2em
-    background #fff
+    background post_background
     border_radius_all(.2em)
     border-bottom border_solid_posts
     header

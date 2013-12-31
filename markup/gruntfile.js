@@ -10,14 +10,45 @@ module.exports = function(grunt) {
             }
         },
 
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 version']
+            },
+            multiple_files: {
+                expand: true,
+                flatten: true,
+                src: 'css/style.css',
+                dest: 'css/build/'
+            }
+        },
+
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'images/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'images/'
+                }]
+            }
+        },
+
         watch: {
             options: {
                 livereload: true,
             },
             stylus: {
                 files: 'styl/**',
-                tasks: 'stylus'
+                tasks: ['stylus', 'autoprefixer']
             },
+            autoprefixer: {
+                files: 'css/**',
+                tasks: ['autoprefixer']
+            },
+            images: {
+                files: ['images/**/*.{png,jpg,gif}', 'images/*.{png,jpg,gif}'],
+                tasks: ['imagemin'],
+            }
         },
 
         connect: {
@@ -29,12 +60,10 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-stylus');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    require('load-grunt-tasks')(grunt);
 
 
-    grunt.registerTask('run', ['connect', 'stylus', 'watch']);
+    grunt.registerTask('run', ['connect', 'imagemin', 'stylus', 'autoprefixer', 'watch']);
     grunt.registerTask('default', ['run'])
 
 };
