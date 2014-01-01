@@ -1,6 +1,6 @@
 body{font:150%/160% Georgia,serif;padding:0;margin:0;color:#303030;background:#ecf0f1}
 h1,h2,h3,h4,h5{font-weight:normal;line-height:1}
-a{color:#2980b9;transition-property:all;transition-duration:.3s;transition-timing-function:ease;}
+a{color:#2980b9;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease;transition-timing-function:ease;}
 a:hover{text-decoration:none}
 img{max-width:100%;display:block;text-align:center;margin:auto}
 .if{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
@@ -23,7 +23,7 @@ body > header ul li a{font-size:.8em}
 ul.social li{margin-right:.5em;}
 ul.social li:nth-last-child(1){margin-right:0}
 ul.social li:after{content:none}
-ul.social li a.icon{display:inline-block;vertical-align:middle;box-sizing:border-box;width:1.4em;height:1.4em;line-height:1;padding:.2em;color:#a3a3a3;text-shadow:1px 1px 2px #fff;border-radius:.2em;}
+ul.social li a.icon{display:inline-block;vertical-align:middle;-moz-box-sizing:border-box;box-sizing:border-box;width:1.4em;height:1.4em;line-height:1;padding:.2em;color:#a3a3a3;text-shadow:1px 1px 2px #fff;border-radius:.2em;}
 ul.social li a.icon:hover{color:#000}
 body > footer{margin:1em 20% 1em 20%;text-align:center;}
 body > footer .icon{font-size:.8em}
@@ -38,7 +38,7 @@ body > footer .icon{font-size:.8em}
 .posts_list{margin:0 20% 2em 20%;background:#fff;border-radius:.4em;text-align:center;}
 .posts_list h3{padding-top:.5em;margin-bottom:0}
 .posts_list ul{padding:0;margin-top:.5em;}
-.posts_list ul li{box-sizing:border-box;padding:.1em;list-style:none;border-bottom:1px solid rgba(63,11,11,0.1);}
+.posts_list ul li{-moz-box-sizing:border-box;box-sizing:border-box;padding:.1em;list-style:none;border-bottom:1px solid rgba(63,11,11,0.1);}
 .posts_list ul li:nth-child(1){border-top:1px solid rgba(63,11,11,0.1)}
 .posts_list ul li:nth-last-child(1){border-bottom:none}
 .posts_list ul li .date{color:#9b9b9b}
@@ -47,7 +47,7 @@ body > footer .icon{font-size:.8em}
 .posts_list ul li h1 a{text-decoration:none}
 .posts .post{margin-bottom:1em;border-bottom:1px solid rgba(117,117,117,0.4);}
 .posts .post:nth-last-child(1){margin-bottom:0}
-.post{box-sizing:border-box;margin:0 10% 0 10%;padding:1.2em;background:#fff;border-radius:.2em;border-bottom:1px solid rgba(117,117,117,0.4);}
+.post{-moz-box-sizing:border-box;box-sizing:border-box;margin:0 10% 0 10%;padding:1.2em;background:#fff;border-radius:.2em;border-bottom:1px solid rgba(117,117,117,0.4);}
 .post header{text-align:center;}
 .post header h1{font-size:1.4em;margin:0;}
 .post header h1 a{color:#303030;text-decoration:none;}
@@ -65,13 +65,13 @@ body > footer .icon{font-size:.8em}
 body > header{padding:.5em 5% 1em 5%;}
 body > header .portrait{width:20%}
 body > footer{padding:.5em 5% 1em 5%}
-.post{box-sizing:border-box;margin:0 2% 0 2%;}
+.post{-moz-box-sizing:border-box;box-sizing:border-box;margin:0 2% 0 2%;}
 .post article{font-size:1.2em}
 .pagination{padding:.5em 5% .5em 5%}
 }@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){body{font-size:150%}
 body > header{padding:.5em 10% 1em 10%;}
 body > header .portrait{width:20%}
 body > footer{padding:.5em 10% 1em 10%}
-.post{box-sizing:border-box;margin:0 6% 0 6%}
+.post{-moz-box-sizing:border-box;box-sizing:border-box;margin:0 6% 0 6%}
 .pagination{padding:.5em 10% .5em 10%}
 }
