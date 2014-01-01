@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 src: 'css/style.css',
-                dest: 'css/build/'
+                dest: 'static/css/'
             }
         },
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'images/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'images/'
+                    dest: 'static/images/'
                 }]
             }
         },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 
         connect: {
             server: {
-                post: 8000, 
+                post: 8000,
                 base: './'
             }
         }
