@@ -7,10 +7,14 @@ tags: [Музыка, Музыкальные инструменты]
 
 И относительно недавно, 16 ноября 2013, мне на глаза попался этот вот замечательный ролик, с удивительным инструментом!
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/fthnmsp7QVA" frameborder="0" allowfullscreen></iframe>
+<figure>
+    <div class="if"><iframe width="560" height="315" src="//www.youtube.com/embed/fthnmsp7QVA" frameborder="0" allowfullscreen></iframe></div>
+</figure>
 
 Но сегодня я удивился еще раз. Я узнал о существовании еще одного нового, и довольно интересного инструмента.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/hP-Tzq3hFgQ" frameborder="0" allowfullscreen></iframe>
+<figure>
+    <div class="if"><iframe width="560" height="315" src="//www.youtube.com/embed/hP-Tzq3hFgQ" frameborder="0" allowfullscreen></iframe></div>
+</figure>
 
 У меня прямо культурный шок наступил! Ошеломительная штука! И знаете, вера в человечество не угасает. 
