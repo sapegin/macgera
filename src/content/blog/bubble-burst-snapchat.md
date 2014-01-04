@@ -3,7 +3,7 @@ date: 2014-01-01
 type: blog
 tags: [Интернет, Безопасность]
 
-Когда мне на глаза попалась новость о том, что [Facebook хлотел купить Snapchat за $3 млрд](http://slon.ru/appheroes/facebook-khotel-kupit-snapchat-za-3-mlrd-no-vnov-poluchil-otkaz-1018854.xhtml). я был удивлен. Как минимум. Ну вот честно, как *это* может стоить таких денег? Мне кажется что это пузырь.
+Когда мне на глаза попалась новость о том, что [Facebook хотел купить Snapchat за $3 млрд](http://slon.ru/appheroes/facebook-khotel-kupit-snapchat-za-3-mlrd-no-vnov-poluchil-otkaz-1018854.xhtml). я был удивлен. Как минимум. Ну вот честно, как *это* может стоить таких денег? Мне кажется что это пузырь.
 
 Потом, мне на глаза попалась еще одна забавная [статья о Snapchat](http://www.siliconrus.com/2013/11/typical-sillicon-valley-komu-v-itoge-dostanetsya-snapchat/). Извините, но как *это* смогло оцениться в $860 млн.?
 
