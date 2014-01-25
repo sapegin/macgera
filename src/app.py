@@ -29,7 +29,14 @@ def more(value):
     else:
         return value
 
+# def page_short(value):
+#     if len(value.split('\n')) > 2:
+#         return value.split('\n')[0] 
+#     else:
+#         return value
+
 app.jinja_env.filters['more'] = more
+# app.jinja_env.filters['page_short'] = page_short
 
 # get posts
 def get_posts(year=None):
