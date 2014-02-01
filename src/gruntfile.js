@@ -39,16 +39,34 @@ module.exports = function(grunt) {
             }
         },
 
+        concat: {
+            dist: {
+                src: [
+                    'static/src/js/jquery-2.0.3.js',
+                    'static/src/js/social-likes.min.js',
+                    'static/src/js/func.js'
+                ],
+                dest: 'static/js/production.js'
+            }
+        },
+
         watch: {
             options: {
                 livereload: true,
             },
+            scripts: {
+                files: ['static/src/js/*.js'],
+                tasks: ['concat'],
+                options: {
+                    spawn: false,
+                }
+            },
             stylus: {
-                files: 'styl/**',
-                tasks: ['stylus', 'autoprefixer']
+                files: 'static/src/styl/**',
+                tasks: ['stylus']
             },
             autoprefixer: {
-                files: 'css/**',
+                files: 'static/src/css/**',
                 tasks: ['autoprefixer']
             },
             images: {
@@ -62,7 +80,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
 
-    grunt.registerTask('run', ['imagemin', 'stylus', 'autoprefixer', 'watch']);
+    grunt.registerTask('run', ['imagemin', 'concat', 'stylus', 'autoprefixer', 'watch']);
     grunt.registerTask('default', ['run'])
 
 };

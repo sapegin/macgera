@@ -5,21 +5,27 @@
     <div class="post">
         <header>
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
-            {% if page.meta.type=='blog' %}
-            <span class="date">Опубликовано {{ page.date }}</span>
-            {% endif %}
+            <div class="meta">
+                <i class="fa fa-clock-o"></i> {{ page.date }}
+                {% if page.meta.tags|length %}
+                    <i class="fa fa-tags"></i> 
+                    {% for page_tag in page.meta.tags %}
+                        <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
         </header>
         <article>
            {{ page.html|more|safe }}
         </article>
         <footer>
-            <div class="tags">
-                {% if page.meta.tags|length %}
-                    метки:
-                    {% for page_tag in page.meta.tags %}
-                        <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
-                    {% endfor %}
-                {% endif %}
+            <div class="social">
+                <div class="social-likes" data-url="http://macgera.name{{ url_for("page", path=page.path) }}" data-title="Блог Михаила Якименко">
+                    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                    <div class="twitter" data-via="macgera" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                    <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                    <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+                </div>
             </div>
         </footer>
     </div>

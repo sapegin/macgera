@@ -6,8 +6,22 @@
 <meta name="author" content="Михаил Якименко" />
 <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
 <!-- Render -->
-<link rel="stylesheet" type="text/css" href="/static/css/font.css">
+<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/social-likes_flat.css">
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<script src="/static/js/production.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47720515-1', 'macgera.name');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
 <body>
 
@@ -21,16 +35,15 @@
     </div>
     <div class="title">
         <ul class="social">
-            <li><a href="https://twitter.com/macgera/" target="_blank" class="icon">s</a></li>
-            <li><a href="https://www.facebook.com/mihail.yakimenko" target="_blank" class="icon">a</a></li>
-            <li><a rel="author" href="https://plus.google.com/+%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%AF%D0%BA%D0%B8%D0%BC%D0%B5%D0%BD%D0%BA%D0%BE?rel=author" target="_blank" class="icon">d</a></li>
-            <li><a href="https://github.com/macgera" target="_blank" class="icon">h</a></li>
-            <li><a href="http://www.linkedin.com/in/myakimenko" target="_blank" class="icon">j</a></li>
-            <li><a href="http://www.flickr.com/photos/96265949@N08/" target="_blank" class="icon">f</a></li>
-            <li><a href="http://instagram.com/macgera" target="_blank" class="icon">g</a></li>
+            <li><a href="https://twitter.com/macgera/" target="_blank" class="icon"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/mihail.yakimenko" target="_blank" class="icon"><i class="fa fa-facebook"></i></a></li>
+            <li><a rel="author" href="https://plus.google.com/+%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%AF%D0%BA%D0%B8%D0%BC%D0%B5%D0%BD%D0%BA%D0%BE?rel=author" target="_blank" class="icon"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://github.com/macgera" target="_blank" class="icon"><i class="fa fa-github-square"></i></a></li>
+            <li><a href="http://www.linkedin.com/in/myakimenko" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="http://www.flickr.com/photos/96265949@N08/" target="_blank" class="icon"><i class="fa fa-flickr"></i></a></li>
+            <li><a href="http://instagram.com/macgera" target="_blank" class="icon"><i class="fa fa-instagram"></i></a></li>
         </ul>
         <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
-        <!-- <h3>Веб-разработчик: ux, ui, html/css, python/django(junior). Увлекаюсь IT и блогами.</h3> -->
         <ul>
             <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
             <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>

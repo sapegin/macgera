@@ -32,7 +32,8 @@ body > footer .icon{font-size:.8em}
 .pagination ul li{display:inline-block;margin:0 auto;width:1.5em;height:1.5em;background:#fff;border-radius:.2em;}
 .pagination ul li a{display:block;width:1.5em;height:1.5em;border-radius:.2em;text-decoration:none;}
 .pagination ul li a:hover{background:#2980b9;color:#fff;text-decoration:none}
-.tags,.date,.meta_text{font-size:.7em;font-style:italic}
+.meta{font-size:.7em;font-style:italic;color:#808080;}
+.meta a{color:#808080}
 .copyrights{font-size:.7em;font-style:italic;}
 .copyrights:before{content:"\00a9";margin-right:.5em}
 .posts_list{margin:0 20% 2em 20%;background:#fff;border-radius:.4em;text-align:center;}
@@ -60,7 +61,7 @@ body > footer .icon{font-size:.8em}
 .post article blockquote{margin-left:0;margin-right:0;padding:.3em 2em;background:#ecf0f1;border-bottom:1px solid rgba(63,11,11,0.1);border-top:1px solid rgba(63,11,11,0.1)}
 .post article figure{margin:0;}
 .post article figure figcaption{margin-top:1em}
-.post footer .tags{text-align:center}
+.post footer .social{margin-bottom:1em;text-align:center}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){body{font-size:260%}
 body > header{padding:.5em 5% 1em 5%;}
 body > header .portrait{width:20%}

@@ -13,6 +13,8 @@ DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
+POSTS_DIR = 'blog'
+PAGES_DIR = 'page'
 PER_PAGE = 5
 FEED_MAX_LINKS = 5
 
@@ -40,7 +42,7 @@ app.jinja_env.filters['more'] = more
 
 # get posts
 def get_posts(year=None):
-    blog = (p for p in pages if 'blog' in p.meta.values())
+    blog = [p for p in pages if p.path.startswith(POSTS_DIR)]
     posts = sorted(blog, reverse=True, key=lambda p: p.meta['date'])
     return posts
 
@@ -68,16 +70,21 @@ def get_taget(tag):
 def index(page):
     pages = get_posts()[(page-1)*PER_PAGE:PER_PAGE*page]
     pagination = Pagination(page, PER_PAGE, len(get_posts()))
-    return render_template('index.html', pages = pages, pagination = pagination, section = 'index', tags = get_tags())
+    return render_template('index.html', pages = pages, pagination = pagination, section = 'index')
 
 @app.route('/<path:path>/')
 def page(path):
+    section = path.split('/')[0]
     page = pages.get_or_404(path)
-    return render_template('page.html', page = page, tags = get_tags())
+    if section == 'blog':
+        template = 'post.html'
+    if section == 'page':
+        template = 'page.html'
+    return render_template(template, page = page)
 
 @app.route('/tag/<string:tag>/')
 def tag(tag):
-    return render_template('tag.html', pages = get_taget(tag), tag = tag, tags = get_tags())
+    return render_template('tag.html', pages = get_taget(tag), tag = tag)
 
 @app.route('/feed/')
 def feed(): 
@@ -94,8 +101,23 @@ def archive():
 def make_external(url):
     return urljoin(request.url_root, url)
 
+@app.route('/403.html')
+def error403():
+    return render_template('403.html')
+
+
+@app.route('/404.html')
+def error404():
+    return render_template('404.html')
+
+
+@app.route('/500.html')
+def error500():
+    return render_template('500.html')
+
+
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found(error):
     return render_template('404.html'), 404
 
 
