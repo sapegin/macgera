@@ -29,12 +29,6 @@ module.exports = function(grunt) {
                     cwd: 'static/images/',
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'static/images/'
-                },
-                {
-                    expand: true,
-                    cwd: 'static/files/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'static/files/'
                 }]
             }
         },
@@ -70,7 +64,7 @@ module.exports = function(grunt) {
                 tasks: ['autoprefixer']
             },
             images: {
-                files: ['static/images/**/*.{png,jpg,gif}', 'static/images/*.{png,jpg,gif}', 'static/files/*.{png,jpg,gif}'],
+                files: ['static/images/**/*.{png,jpg,gif}', 'static/images/*.{png,jpg,gif}'],
                 tasks: ['imagemin'],
             }
         }
