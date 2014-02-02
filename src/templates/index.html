@@ -10,6 +10,7 @@
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
             <div class="meta">
                 <i class="fa fa-clock-o"></i> {{ page.date }}
+                <i class="fa fa-comments"></i> <a href="{{ url_for("page", path=page.path) }}#disqus_thread"></a>
                 {% if page.meta.tags|length %}
                     <i class="fa fa-tags"></i> 
                     {% for page_tag in page.meta.tags %}
@@ -70,3 +71,18 @@
 </nav>
 <!-- /pagination -->
 {% endblock content %}
+
+{% block disquscount %}
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'macgeraname'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+{% endblock disquscount %}
