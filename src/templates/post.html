@@ -9,7 +9,6 @@
         <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
         <div class="meta">
             <i class="fa fa-clock-o"></i> {{ page.date }}
-            <i class="fa fa-comments"></i> <a href="{{ url_for("page", path=page.path) }}#disqus_thread"></a>
             {% if page.meta.tags|length %}
                 <i class="fa fa-tags"></i> 
                 {% for page_tag in page.meta.tags %}

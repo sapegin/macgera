@@ -23,23 +23,6 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
 
-# add more filter
-def more(value):
-    if '!more' in value:
-        value = value.replace('!more', '<!--more-->')
-        return value.split('<!--more-->')[0]
-    else:
-        return value
-
-# def page_short(value):
-#     if len(value.split('\n')) > 2:
-#         return value.split('\n')[0] 
-#     else:
-#         return value
-
-app.jinja_env.filters['more'] = more
-# app.jinja_env.filters['page_short'] = page_short
-
 # get posts
 def get_posts(year=None):
     blog = [p for p in pages if p.path.startswith(POSTS_DIR)]

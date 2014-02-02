@@ -59,7 +59,7 @@ body > footer .icon{font-size:.8em}
 .post article table tr th,.post article table tr td{text-align:center;vertical-align:middle;padding:.2em;margin:0;background:#ecf0f1}
 .post article table tr:hover td{background:#d5d5d5}
 .post article blockquote{margin-left:0;margin-right:0;padding:.3em 2em;background:#ecf0f1;border-bottom:1px solid rgba(63,11,11,0.1);border-top:1px solid rgba(63,11,11,0.1)}
-.post article figure{margin:0;}
+.post article figure{margin-left:0;margin-right:0;}
 .post article figure figcaption{margin-top:1em}
 .post footer .social{margin-bottom:1em;text-align:center}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){body{font-size:260%}
