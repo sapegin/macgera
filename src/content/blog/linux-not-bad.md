@@ -5,12 +5,12 @@ tags: [Linux, Свободное ПО]
 
 Снова и снова натыкаюсь на прекрасные скрины Linux систем, и не перестаю удивляться этому. Да и люди в общем-то молодцы. Меня всегда привлекал Linux именно из-за возможности кастомизировать его внешний вид. Я не говорю об обоях и цветах рамок окон, это тоже конечно, но, речь о системе в целом.
 
-![Linux gnome Fallback!](/static/files/uzmg.png)
+![Linux gnome Fallback!](http://imageshack.com/a/img801/9929/ci0y.png)
 
 Взял тут - *[Первый док, поэтому побольше](http://www.linux.org.ru/gallery/screenshots/9972537)*
 
-![Модифицированный XFCE](/static/files/q1l9.png)
+![Модифицированный XFCE](http://imageshack.com/a/img842/9997/y4rb.png)
 
-Скука - *[Первый док, поэтому побольше](http://www.linux.org.ru/gallery/screenshots/9972537)*
+Скука - *[Первый док, поэтому побольше](http://www.linux.org.ru/gallery/screenshots/9928185)*
 
 Нужно заставить себя как-нибудь в выходной и повозиться с PC.

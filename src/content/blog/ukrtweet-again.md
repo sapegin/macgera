@@ -13,23 +13,23 @@ tags: [Событие, Твиттер]
 
 ### Не много фото и видео c УкрТвиит 3.
 
-![Начало ukrtweet, я написал на доске, в помещении кофебрейка](/static/files/v7mq.jpg)
+![Начало ukrtweet, я написал на доске, в помещении кофебрейка](http://imageshack.com/a/img197/376/i73q.jpg)
 
 *Начало ukrtweet, я написал на доске, в помещении кофебрейка*
 
-![Марчнко](/static/files/pnjb.jpg)
+![Марчнко](http://imageshack.com/a/img856/2369/bgty.jpg)
 
 *Выступление [@shami13](https://twitter.com/#!/shami13), довольно забавно было :)*
 
-![Мой скромный обед в кофелайф, Виски и чизкейк.](/static/files/qhow.jpg)
+![Мой скромный обед в кофелайф, Виски и чизкейк.](http://imageshack.com/a/img577/6544/k4uc.jpg)
 
 Мой скромный обед в [кофелайф](http://coffeelife.com.ua/), Виски и чизкейк.
 
-![Какая-то замутка с квестами от Леши](/static/files/0nzm.jpg)
+![Какая-то замутка с квестами от Леши](http://imageshack.com/a/img812/8189/vmzr.jpg)
 
 Какая-то замутка с квестами от [Леши](https://twitter.com/#!/Crash_AT)
 
-![Это уже Афтепати, я с Карелиной](/static/files/v2m1.jpg)
+![Это уже Афтепати, я с Карелиной](http://imageshack.com/a/img571/4176/mx09.jpg)
 
 Это уже Афтепати, я с [Карелиной](https://twitter.com/#!/karelina).
 
