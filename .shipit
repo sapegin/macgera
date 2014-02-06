@@ -1,0 +1,8 @@
+host='macgera'
+path='projects/macgera'
+
+[deploy]
+git checkout master
+git pull
+source ~/.envs/macgera/bin/activate
+./src/app.py build
