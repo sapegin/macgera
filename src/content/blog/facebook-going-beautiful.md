@@ -9,7 +9,7 @@ tags: [Facebook, интернет, Видео]
 <figure>
     <div class="if">
         <video width="320" height="240" controls>
-            <source src="/static/files/statigram-best-moments-video.mp4" type="video/mp4">
+            <source src="http://greendogstorage.s3.amazonaws.com/mg/statigram-best-moments-video.mp4" type="video/mp4">
             Ваш браузер слишком стар, зачем быть таким глупым и пользоваться им?
         </video>
     </div>
